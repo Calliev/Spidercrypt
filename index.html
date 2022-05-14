@@ -24,6 +24,30 @@
 </head>
 <body>
 
+    <!-- Tela de loading-->
+
+   <!--<div class="preloader">
+        <div class="counter">0</div>
+    </div> -->
+
+    <!--====== JAVA DO CONTADOR ======-->
+
+           <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script type="text/javascript">
+                function counter(){
+                    var count = setInterval(function(){
+                        var c = parseInt($('.counter').text());
+                        $('.counter').text((++c).toString());
+                        if (c == 100){
+                            clearInterval(count);
+                            $('.counter').addClass('hide')
+                            $('.preloader').addClass('active')
+                        }
+                    },60)
+                }
+                counter()
+                </script> -->
+
     <!--====== CABEÇA ======-->
     <header class="header" id="header">
         <nav class="nav container">
@@ -43,7 +67,7 @@
                     </li>
                                      <!--item3-->   
                     <li class="nav__item">
-                        <a href="#villains" class="nav__link">Villains</a>
+                        <a href="#popular" class="nav__link">Villains</a>
                     </li>
                                      <!--item4-->
                     <li class="nav__item">
@@ -177,6 +201,9 @@
                                 <i class="ri-body-scan-fill"></i> 2,2m
                             </div>
                         </div>
+                        <button class="button popular__button">
+                            <i class="ri-information-line"></i>
+                        </button>
                     </article>
 
 
@@ -203,6 +230,9 @@
                                 <i class="ri-body-scan-fill"></i> 2,2m
                             </div>
                         </div>
+                        <button class="button popular__button">
+                            <i class="ri-information-line"></i>
+                        </button>
                     </article>
 
 
@@ -229,6 +259,9 @@
                                 <i class="ri-body-scan-fill"></i> 2,2m
                             </div>
                         </div>
+                        <button class="button popular__button">
+                            <i class="ri-information-line"></i>
+                        </button>
                     </article>
 
 
@@ -255,112 +288,10 @@
                                 <i class="ri-body-scan-fill"></i> 2,2m
                             </div>
                         </div>
+                        <button class="button popular__button">
+                            <i class="ri-information-line"></i>
+                        </button>
                     </article>
-
-
-                    <article class="popular__card swiper-slide">
-                        <div class="shape shape__smaller"></div>
-
-                        <h1 class="popular__title">Abutre</h1>
-                        <h3 class="popular__subtitle">Adrian Toomes</h3>
-
-                        <img src="img/abutre.png" alt="" class="popular__img">
-
-                        <div class="popular__data">
-                            <div class="popular__data-group">
-                                <i class="ri-flashlight-fill"></i> 70
-                            </div>
-
-
-                            <div class="popular__data-group">
-                                <i class="ri-star-s-fill"></i> 85
-                            </div>
-
-
-                            <div class="popular__data-group">
-                                <i class="ri-body-scan-fill"></i> 2,2m
-                            </div>
-                        </div>
-                    </article>
-
-
-                    <article class="popular__card swiper-slide">
-                        <div class="shape shape__smaller"></div>
-
-                        <h1 class="popular__title">Electro</h1>
-                        <h3 class="popular__subtitle">Maxwell Dillon</h3>
-
-                        <img src="img/electro.png" alt="" class="popular__img">
-
-                        <div class="popular__data">
-                            <div class="popular__data-group">
-                                <i class="ri-flashlight-fill"></i> 70
-                            </div>
-
-
-                            <div class="popular__data-group">
-                                <i class="ri-star-s-fill"></i> 85
-                            </div>
-
-
-                            <div class="popular__data-group">
-                                <i class="ri-body-scan-fill"></i> 2,2m
-                            </div>
-                        </div>
-                    </article> 
-
-
-                    <article class="popular__card swiper-slide">
-                        <div class="shape shape__smaller"></div>
-
-                        <h1 class="popular__title">Gata Negra</h1>
-                        <h3 class="popular__subtitle">Felicia Hardy</h3>
-
-                        <img src="img/felicia.jpg" alt="" class="popular__img">
-
-                        <div class="popular__data">
-                            <div class="popular__data-group">
-                                <i class="ri-flashlight-fill"></i> 70
-                            </div>
-
-
-                            <div class="popular__data-group">
-                                <i class="ri-star-s-fill"></i> 85
-                            </div>
-
-
-                            <div class="popular__data-group">
-                                <i class="ri-body-scan-fill"></i> 2,2m
-                            </div>
-                        </div>
-                    </article> 
-
-
-                    <article class="popular__card swiper-slide">
-                        <div class="shape shape__smaller"></div>
-
-                        <h1 class="popular__title">O caçador</h1>
-                        <h3 class="popular__subtitle">Kraven</h3>
-
-                        <img src="img/kraven.png" alt="" class="popular__img">
-
-                        <div class="popular__data">
-                            <div class="popular__data-group">
-                                <i class="ri-flashlight-fill"></i> 70
-                            </div>
-
-
-                            <div class="popular__data-group">
-                                <i class="ri-star-s-fill"></i> 85
-                            </div>
-
-
-                            <div class="popular__data-group">
-                                <i class="ri-body-scan-fill"></i> 2,2m
-                            </div>
-                        </div>
-                    </article> 
-
 
                     <article class="popular__card swiper-slide">
                         <div class="shape shape__smaller"></div>
@@ -385,60 +316,10 @@
                                 <i class="ri-body-scan-fill"></i> 2,2m
                             </div>
                         </div>
+                        <button class="button popular__button">
+                            <i class="ri-information-line"></i>
+                        </button>
                     </article> 
-
-
-                    <article class="popular__card swiper-slide">
-                        <div class="shape shape__smaller"></div>
-
-                        <h1 class="popular__title">Morbius</h1>
-                        <h3 class="popular__subtitle">Michael Morbius</h3>
-
-                        <img src="img/morbius.png" alt="" class="popular__img">
-
-                        <div class="popular__data">
-                            <div class="popular__data-group">
-                                <i class="ri-flashlight-fill"></i> 70
-                            </div>
-
-
-                            <div class="popular__data-group">
-                                <i class="ri-star-s-fill"></i> 85
-                            </div>
-
-
-                            <div class="popular__data-group">
-                                <i class="ri-body-scan-fill"></i> 2,2m
-                            </div>
-                        </div>
-                    </article> 
-
-
-                    <article class="popular__card swiper-slide">
-                        <div class="shape shape__smaller"></div>
-
-                        <h1 class="popular__title">Rhino</h1>
-                        <h3 class="popular__subtitle">Aleksei Mikhailovich Sytsevich</h3>
-
-                        <img src="img/rhino.png" alt="" class="popular__img">
-
-                        <div class="popular__data">
-                            <div class="popular__data-group">
-                                <i class="ri-flashlight-fill"></i> 70
-                            </div>
-
-
-                            <div class="popular__data-group">
-                                <i class="ri-star-s-fill"></i> 85
-                            </div>
-
-
-                            <div class="popular__data-group">
-                                <i class="ri-body-scan-fill"></i> 2,2m
-                            </div>
-                        </div>
-                    </article> 
-
 
                     <article class="popular__card swiper-slide">
                         <div class="shape shape__smaller"></div>
@@ -463,6 +344,9 @@
                                 <i class="ri-body-scan-fill"></i> 2,2m
                             </div>
                         </div>
+                        <button class="button popular__button">
+                            <i class="ri-information-line"></i>
+                        </button>
                     </article> 
                 </div>
 

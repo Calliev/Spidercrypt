@@ -1,9 +1,11 @@
-/*=============== SHOW MENU ===============*/
+/=============== SHOW MENU ===============/
 const navMenu = document.getElementById('nav-menu'),
       navToogle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close')
 
+    
 /* ====== MENU SHOW ======*/
+
 if(navToogle){
     navToogle.addEventListener('click', () =>{
         navMenu.classList.add('show-menu')
@@ -18,11 +20,11 @@ if(navClose){
 }
 
 /*=============== REMOVE MENU MOBILE ===============*/
-const navLink = document.querySelectorAll('.nav__link')
+const navLink = document.querySelectorAll('.navlink')
 
 function linkAction(){
     const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
+    // When we click on each navlink, we remove the show-menu class
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
@@ -56,16 +58,3 @@ let swiperPopular = new Swiper(".popular__container", {
       },
 
  });
-/*=============== MIXITUP FILTER FEATURED ===============*/
-
-
-/* Link active featured */ 
-
-
-/*=============== SHOW SCROLL UP ===============*/ 
-
-
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-
-
-/*=============== SCROLL REVEAL ANIMATION ===============*/
