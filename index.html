@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spider-Man</title>
+    
 
      <!--====== FAVICON ======-->  
-     <link rel="shortcut icon" href="" type="">
+     <link rel="apple-touch-icon" sizes="180x180" href="favicon/">
+     <link rel="icon" type="image/png" sizes="32x32" href="favicon//favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="favicon//favicon-16x16.png">
+     <link rel="manifest" href="favicon//site.webmanifest">
 
       <!--=============== REMIX ICONS ===============-->
      
@@ -21,18 +24,19 @@
     
     <!--========= ICON ========-->
     <link href="https://fontawesome.com" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
 </head>
 <body>
 
-    <!-- Tela de loading-->
+    <!-- CONTADOR-->
 
-   <!--<div class="preloader">
+    <!-- <div class="preloader">
         <div class="counter">0</div>
     </div> -->
 
-    <!--====== JAVA DO CONTADOR ======-->
+    <!--====== JS DO CONTADOR ======-->
 
-           <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+          <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
             <script type="text/javascript">
                 function counter(){
                     var count = setInterval(function(){
@@ -53,7 +57,7 @@
         <nav class="nav container">
             <a href="#" class="nav__logo">
                 <i class="ri-gitlab-line"></i>
-                kitcatdolls
+                Spidercrypt
             </a>
 
             <div class="nav__menu" id="nav-menu">
@@ -63,11 +67,11 @@
                     </li>
                                     <!--item2-->
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">About</a>
+                        <a href="#about" class="nav__link">Sobre</a>
                     </li>
                                      <!--item3-->   
                     <li class="nav__item">
-                        <a href="#popular" class="nav__link">Villains</a>
+                        <a href="#popular" class="nav__link">Vilões</a>
                     </li>
                                      <!--item4-->
                     <li class="nav__item">
@@ -80,7 +84,7 @@
                 </div>
             </div>
 
-            <!--Butao-->
+            <!--Botao-->
             <div class="nav__toggle" id="nav-toggle">
                 <i class="ri-menu-line"></i>
             </div>
@@ -143,7 +147,7 @@
                     </div>
                </div>
 
-               <a href="#" class="home__button">START</a>
+               <a href="#about" class="home__button">START</a>
            </div>
         </section>
 
@@ -173,7 +177,7 @@
         <!--==================== VILÕES ====================-->
         <section class="popular section" id="popular">
             <h2 class="section__title">
-                Escolha um vilao
+                Escolha um vilão
             </h2>
 
             <div class="popular__container container swiper">
@@ -202,7 +206,7 @@
                             </div>
                         </div>
                         <button class="button popular__button">
-                            <i class="ri-information-line"></i>
+                           <a href="#featured"> <i class="ri-information-line"></i></a>
                         </button>
                     </article>
 
@@ -231,7 +235,7 @@
                             </div>
                         </div>
                         <button class="button popular__button">
-                            <i class="ri-information-line"></i>
+                            <a href="#featured-2"><i class="ri-information-line"></i></a>
                         </button>
                     </article>
 
@@ -239,7 +243,7 @@
                     <article class="popular__card swiper-slide">
                         <div class="shape shape__smaller"></div>
 
-                        <h1 class="popular__title">Duente Verde</h1>
+                        <h1 class="popular__title">Duende Verde</h1>
                         <h3 class="popular__subtitle">Norman Osborn</h3>
 
                         <img src="img/duende.png" alt="" class="popular__img">
@@ -260,7 +264,7 @@
                             </div>
                         </div>
                         <button class="button popular__button">
-                            <i class="ri-information-line"></i>
+                            <a href="#featured-3"><i class="ri-information-line"></i></a>
                         </button>
                     </article>
 
@@ -289,7 +293,7 @@
                             </div>
                         </div>
                         <button class="button popular__button">
-                            <i class="ri-information-line"></i>
+                            <a href="#featured-4"><i class="ri-information-line"></i></a>
                         </button>
                     </article>
 
@@ -317,7 +321,7 @@
                             </div>
                         </div>
                         <button class="button popular__button">
-                            <i class="ri-information-line"></i>
+                           <a href="#featured-5"> <i class="ri-information-line"></i></a>
                         </button>
                     </article> 
 
@@ -345,7 +349,7 @@
                             </div>
                         </div>
                         <button class="button popular__button">
-                            <i class="ri-information-line"></i>
+                            <a href="#featured-6"><i class="ri-information-line"></i></a>
                         </button>
                     </article> 
                 </div>
@@ -379,20 +383,17 @@
                         <p class="featured__card-description">Calor Intenso <br> Sonoridade</p>
                     </div>
                 </div>
+                    
             </div>
 
-            <img src="img/linhas do venom.png" alt="" class="featured__map">
+            <img src="" alt="" class="featured__map">
 
             <div class="featured2__container container grid">
-                <div class="featured2__data">
+                <div class="featured2__data" >
                     
                     <p class="featured2__description">
-                        Peter Parker perdeu seus pais, Richard e Mary Parker, quando era jovem.  Órfão, ele teve que viver com seu Tio Ben e sua Tia May. 
-                        Durante uma exposição de ciência, ele foi mordido por uma Aranha Radioativa, concedendo-lhe seus poderes. 
-                        Ele decidiu usar esses poderes para seu próprio ganho egoísta, até que seu tio Ben morreu nas mãos de um Ladrão que ele poderia ter impedido. 
-                        Foi nesse ponto que ele aprendeu "Com grandes poderes, também deve haver grandes responsabilidades", e decidiu viver de acordo com o mantra de seu tio e usar seus poderes como uma força para o bem como Homem-Aranha.
-                        Atual no universo cinematografico da marvel existem tres homens aranhas,
-                        interpretados por Tobey maguire, Andrew Garfield e Tom Holland.
+                        Venom é um simbionte alienígena que forma-se a partir de um líquido, material orgânico de espessura. Comumente, seu hóspede é Eddie Brock, um jornalista que pertence ao mesmo universo de Homem-Aranha. Sobretudo, a característica principal do personagem é o uniforme negro, mas também a desproporcional e assustadora mandíbula.
+                    Em resumo, Venom é um alienígena Klyntar corrompido pelos sentimentos de violência, de modo que seja viciado em raiva por causa do seu primeiro hospedeiro. Portanto, a história do Venom mostra que ele está sendo corrompido gradativamente por isso, de modo que se torne mais sádico, arrogante e zombador com o tempo.
                     </p>
                 </div>
             </div>
@@ -454,12 +455,12 @@ Mas esta é apenas parte de sua trágica história. Na verdade, ele cresceu em u
 
                     <div class="featured__card featured__card-8">
                         <h3 class="featured__card-title-3">Habilidades</h3>
-                        <p class="featured__card-description-3">Fator de cura <br> Força sobre-humana <br> resistência e fator de cura</p>
+                        <p class="featured__card-description-3">Grande estrategista <br> Mestre em combate corpo-a-corpo <br> Exímio inventor</p>
                     </div>
 
                     <div class="featured__card featured__card-9">
                         <h3 class="featured__card-title-3">Fraquezas</h3>
-                        <p class="featured__card-description-3">Calor Intenso <br> Sonoridade</p>
+                        <p class="featured__card-description-3">Insanidade <br> Seu filho</p>
                     </div>
                 </div>
             </div>
@@ -485,12 +486,12 @@ Fala-se Duende Verde original, pois existiram vários outros que sucederam o Nor
             </h2>
 
             <div class="featured__container-4 container grid">
-                <div class="featured__group-">
+                <div class="featured__group-4">
                     <img src="img/mysterio 2.png" alt="" class="featured__img-4">
 
                     <div class="featured__card-4 featured__card-10">
-                        <h3 class="featured__card-title-4">Alter ego psicótico</h3>
-                        <p class="featured__card-description-4">Insanidade gerada pela <br> indução do soro mutágênico </p>
+                        <h3 class="featured__card-title-4">Especialista em efeitos visuais</h3>
+                        <p class="featured__card-description-4">Ilusionista e <br> hipnotizador </p>
                     </div>
 
                     <div class="featured__card featured__card-11">
@@ -500,12 +501,12 @@ Fala-se Duende Verde original, pois existiram vários outros que sucederam o Nor
 
                     <div class="featured__card featured__card-12">
                         <h3 class="featured__card-title-4">Fraquezas</h3>
-                        <p class="featured__card-description-4">Calor Intenso <br> Sonoridade</p>
+                        <p class="featured__card-description-4">Falta de tecnologia <br> Falta de conexão</p>
                     </div>
                 </div>
             </div>
 
-            <img src="img/fundo mysterio 2.png" alt="" class="featured__map-4">
+            <img src="" alt="" class="featured__map-4">
 
             <div class="featured2__container container grid">
                 <div class="featured2__data">
@@ -525,27 +526,27 @@ Originalmente, Quentin Beck não possui poderes sobre humanos, mas é um hábil 
             </h2>
 
             <div class="featured__container-5 container grid">
-                <div class="featured__group-">
+                <div class="featured__group-5">
                     <img src="img/lagarto 2.png" alt="" class="featured__img-5">
 
                     <div class="featured__card-5 featured__card-13">
-                        <h3 class="featured__card-title-5">Alter ego psicótico</h3>
-                        <p class="featured__card-description-5">Insanidade gerada pela <br> indução do soro mutágênico </p>
+                        <h3 class="featured__card-title-5">Ciêntista e cirurgião</h3>
+                        <p class="featured__card-description-5">Inspirado pela <br> regeneração dos répteis</p>
                     </div>
 
                     <div class="featured__card featured__card-14">
                         <h3 class="featured__card-title-5">Habilidades</h3>
-                        <p class="featured__card-description-5">Fator de cura <br> Super-Força <br> Agilidade e rapidez sobre-humana</p>
+                        <p class="featured__card-description-5">Alto fator de cura <br> Telepatia com répteis <br> Super Velocidade</p>
                     </div>
 
                     <div class="featured__card featured__card-15">
                         <h3 class="featured__card-title-5">Fraquezas</h3>
-                        <p class="featured__card-description-5">Calor Intenso <br> Sonoridade</p>
+                        <p class="featured__card-description-5">Frio <br></p>
                     </div>
                 </div>
             </div>
 
-            <img src="img/dna lagarto.png" alt="" class="featured__map-5">
+            <img src="" alt="" class="featured__map-5">
 
             <div class="featured2__container container grid">
                 <div class="featured2__data">
@@ -564,20 +565,20 @@ O Lagarto deseja destruir todos os mamíferos da face da Terra. Para tanto const
             </h2>
 
             <div class="featured__container-6 container grid">
-                <div class="featured__group-">
+                <div class="featured__group-6">
                     <img src="img/sandman 2.png" alt="" class="featured__img-6">
 
-                    <div class="featured__card-6 featured__card-16">
-                        <h3 class="featured__card-title-6">Alter ego psicótico</h3>
-                        <p class="featured__card-description-6">Insanidade gerada pela <br> indução do soro mutágênico </p>
+                    <div class="featured__card featured__card-16">
+                        <h3 class="featured__card-title-6">Acidente radioativo</h3>
+                        <p class="featured__card-description-6"> O impacto indireto de radiação que sofreu <br> com a areia lhe deu poderes</p>
                     </div>
 
-                    <div class="featured__card-6 featured__card-17">
+                    <div class="featured__card featured__card-17">
                         <h3 class="featured__card-title-6">Habilidades</h3>
                         <p class="featured__card-description-6">Materializar qualquer objeto atravez da areia <br> Alterar fisonomia <br> Fator de cura</p>
                     </div>
 
-                    <div class="featured__card-6 featured__card-18">
+                    <div class="featured__card featured__card-18">
                         <h3 class="featured__card-title-6">Fraquezas</h3>
                         <p class="featured__card-description-6">Calor Intenso <br> Alta quantidade de aguá</p>
                     </div>
@@ -628,6 +629,8 @@ O Lagarto deseja destruir todos os mamíferos da face da Terra. Para tanto const
 
    <!--====== FOOTER ======-->
    <footer class="footer section">
+        <script type="text/javascript" src="js/particles.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
        <div class="shape shape__big"></div>
        <div class="shape shape__small"></div>
 
@@ -637,26 +640,11 @@ O Lagarto deseja destruir todos os mamíferos da face da Terra. Para tanto const
                 <i class="ri-gitlab-line"></i> Spidercrypt
                </a>
                <p class="footer__description">
-                O kitcatdolls é um site onde o assunto principal é o Homem-Aranha e seus principais viloes,
+                O spidercrypt é um site <br>onde o assunto principal é o Homem-Aranha e <br>seus principais viloes,
                    especificando as habilidades e fraquezas. <br>   
                 Somos um grupo de alunos do 1º semestre do <br> curso de 
-                   analise e desenvolvimento de sistemas na universidade nove de julho. <br> 
+                   analise e desenvolvimento de sistemas <br>na universidade nove de julho. <br> 
                </p>
-           </div>
-
-           <div class="footer__content">
-               <h3 class="footer__title">
-                    Sobre nós
-               </h3>
-
-               <ul class="footer__links">
-                   <li>
-                       <a href="#" class="footer__link">História</a>
-                   </li>
-
-                   <li>
-                    <a href="#" class="footer__link">Devs</a>
-                </li>
            </div>
 
            <div class="footer__content">
@@ -666,63 +654,85 @@ O Lagarto deseja destruir todos os mamíferos da face da Terra. Para tanto const
 
             <ul class="footer__links">
                 <li>
-                    <a href="#" class="footer__link">Breno</a>
+                    <a target="_blank" href="#" class="footer__link">@Breno</a>
                 </li>
 
                 <li>
-                 <a href="#" class="footer__link">Henrique</a>
+                    <a target="_blank" href="https://www.instagram.com/oguerra___/" class="footer__link">@Guilherme</a>
+                </li>
+
+                <li>
+                 <a target="_blank" href="https://www.instagram.com/lepre_skt/" class="footer__link">@Henrique</a>
              </li>
 
              <li>
-                 <a href="#" class="footer__link">Ingryd</a>
+                 <a target="_blank" href="https://www.instagram.com/ingryd.rodriguees/" class="footer__link">@Ingryd</a>
              </li>
 
              <li>
-                 <a href="#" class="footer__link">Leandro</a>
+                 <a target="_blank"  href="https://www.instagram.com/le_oliv3ira/" class="footer__link">@Leandro</a>
              </li>
 
              <li>
-                <a href="#" class="footer__link">Leonardo</a>
+                <a target="_blank" href="https://www.instagram.com/leo_ragassio/" class="footer__link">@Leonardo</a>
             </li>
 
             <li>
-                <a href="#" class="footer__link">Levi</a>
+                <a target="_blank" href="#" class="footer__link">@Levi</a>
             </li>
 
             <li>
-                <a href="#" class="footer__link">Matheus</a>
+                <a target="_blank"  href="#" class="footer__link">@Matheus</a>
             </li>
 
             <li>
-                <a href="#" class="footer__link">Vanessa</a>
+                <a target="_blank" href="https://www.instagram.com/poxavidavan/" class="footer__link">@Vanessa</a>
             </li>
 
             <li>
-                <a href="#" class="footer__link">Wagner</a>
+                <a target="_blank" href="https://www.instagram.com/frediani1_/" class="footer__link">@Wagner</a>
             </li>
             </ul>
         </div>
+
 
         <div class="footer__content">
             <h3 class="footer__title">
                 Siga-nos
             </h3>
+            <ul class="footer__social">
+                <a href="" target="_blank" class="footer__social-link">
+                    <i class="ri-twitter-line"></i>
+                </a>
 
+                <a href="https://www.instagram.com/spidercrypts/" target="_blank" class="footer__social-link">
+                    <i class="ri-instagram-line"></i>
+                </a>
 
+                <a href="" target="_blank" class="footer__social-link">
+                    <i class="ri-facebook-circle-line"></i>
+                </a>
+            </ul>
         </div>
        </div>
 
        <spaan class="footer__copy">
            &#169; Spidercrypt. Todos os direitos reservados.
        </spaan>
+       <div id="particles-js"></div>
+   <script type="text/javascript" src="js/particles.js"></script>
+   <script type="text/javascript" src="js/app.js">
+   </script>
    </footer>
+
+
    
    <!--====== RODAR PRA CIMA ======-->   
    <a href="#" class="scrollup" id="scroll-up">
     <i class="ri-arrow-up-circle-line"></i>
    </a>
    <!--====== SCROLL REVEAL ======-->
-   <script src=""></script>
+   <script src="js/scrollreveal.min.js"></script>
 
    <!--====== SWIPER JS ======-->      
    <script src="js/swiper-bundle.min.js"></script>

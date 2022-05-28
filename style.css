@@ -1,7 +1,7 @@
 /*--====== GOOGLE FONTS ======--*/
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&family=Poppins:ital,wght@1,100&display=swap');
 
-    /*--====== VARIAVEIS CSS ======--*/
+   /*--====== VARIAVEIS CSS ======--*/
 :root{
     --header-height: 3.5rem;
 
@@ -11,10 +11,10 @@
         --firs-color-alt: hsl(219, 69%, 52%);
         --title-color: hsl(219, 8%, 95%);
         --text-color: hsl(219, 8%, 75%);
-        --text-color-light: hsl(219, 4%, 55%);
+        --text-color-light: hsl(340, 97%, 49%);
         --white-color: #fff;
         --body-color: hsl(219, 4%, 4%);
-        --container-cor: hsl(219, 4%, 7%);
+        --container-cor: hsl(300, 6%, 7%);
 
             /*--====== FONTE E TIPOGRAFIA ======--*/
         /*.5rem = 8px | 1rem = 16px ...*/
@@ -64,7 +64,7 @@
 
 .preloader::before
 {
-    content: url(Captura\ de\ tela\ 2022-03-31\ 231731.png);
+    content: url(homem_aranha_incio.png);
     position: absolute;
     font-size: 12em;
     font-weight: 900;
@@ -120,6 +120,7 @@ body{
     background-color: var(--body-color); 
     color: var(--text-color);
 }
+
 
 h1, h2, h3{
     color: var(--title-color);
@@ -205,13 +206,13 @@ img{
     align-items: center;
 }
 
-.nav__logo,
 .nav__toggle{
     color: var(--title-color);
     display: inline-flex;
 }
 
 .nav__logo{
+    color: white;
     align-items: center;
     column-gap: .25rem;
     font-weight: var(--font-medium);
@@ -540,6 +541,19 @@ img{
     background-color: var(--first-color);
 }
 
+.ri-information-line{
+    color:white;
+}
+.ri-information-line:visited{
+    color: white;
+}
+.ri-information-line:hover{
+    color: rgb(104, 57, 57);
+}
+.ri-information-line:active{
+    color:  rgb(110, 10, 10);
+}
+
 /*=============== FEATURED VENOM ===============*/
 .featured{
     overflow: hidden;
@@ -787,18 +801,18 @@ img{
 }
 
 .featured__card-10{
-    top: 111px;
-    left: 273px;
+    top: 52px;
+    left: -37px;
 }
 
 .featured__card-11{
-    top: 250px;
-    right: 165px;
+    top: 168px;
+    right: 141px;
 }
 
 .featured__card-12{
-    left: 213px;
-    bottom: 627px;
+    left: 149px;
+    bottom: 39px;
 }
 
 .featured__card-title-4{
@@ -856,18 +870,18 @@ img{
 }
 
 .featured__card-13{
-    top: 43px;
-    left: 236px;
+    top: -30px;
+    left: 163px;
 }
 
 .featured__card-14{
-    top: 230px;
-    right: -18px;
+    top: 127px;
+    right: -71px;
 }
 
 .featured__card-15{
-    left: 155px;
-    bottom: 622px;
+    left: -67px;
+    bottom: 29px;
 }
 
 .featured__card-title-5{
@@ -925,18 +939,18 @@ img{
 }
 
 .featured__card-16{
-    top: 159px;
-    left: -53px;
+    top: 2px;
+    left: 148px;
 }
 
 .featured__card-17{
-    top: 312px;
-    right: -18px;
+    top: 110px;
+    right: -51px;
 }
 
 .featured__card-18{
-    left: 227px;
-    bottom: 791px;
+    left: 146px;
+    bottom: 22px;
 }
 
 .featured__card-title-6{
@@ -948,15 +962,6 @@ img{
     font-size: var(--smaller-font-size);
 }
 
-.featured__map-6{
-    max-width: initial;
-    width: 377px;
-    position: absolute;
-    top: 136px;
-    left: 60px;
-    margin: auto;
-    opacity: 10%;
-}
 
 /*=============== LOGOS ===============*/
 .logos__img{
@@ -1038,7 +1043,11 @@ img{
     transition: .3s;
 }
 
-.footer__link:hover,
+.footer__link:hover{
+    color: blue;
+    text-decoration: underline;
+    text-decoration-color:blue ;
+}
 .footer__social-link:hover{
     color: var(--title-color);
 }
@@ -1059,8 +1068,6 @@ img{
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
 }
-
-
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar{
@@ -1121,12 +1128,30 @@ border-radius: 1rem;
 }
 
 /* For medium devices */
+@media screen and (min-width: 576px){
+    .about__group{
+        width: 350px;
+        justify-self: center;
+    }
 
+    .featured__content{
+        grid-template-columns: repeat(2, 228px);
+    }
 
+    .featured__map{
+        left: 138px;
+    } 
 
+    .featured__map-4{
+        left: 152px;
+    }
 
+    .featured__map-5{
+        left: 132px;
+    }
+     
+}
 
-/* For large devices */
 @media screen and (min-width: 767px){
     .section{
         padding: 7rem 0 2rem;
@@ -1150,5 +1175,142 @@ border-radius: 1rem;
     .about__container{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .featured__map{
+        left: 220px;
+        top: 177px;
+    }
+    
+    .featured__map-4{
+        left: 207px;
+    }
+
+    .featured__map-5{
+        left: 241px;
+    }
+
+    .logos__container{
+        gap: 4rem 8rem;
+    }
+
+    .footer__container{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 /* For large devices */
+
+@media screen and (min-width: 1040px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .shape__big{
+        width: 500px;
+        height: 500px;
+    }
+
+    .shape__small{
+        width: 400px;
+        height: 400px;
+    }
+
+    .home__container{
+        padding-top: 2rem;
+    }
+
+    .home__img{
+        width: 380px;
+    }
+
+    .home__car{
+        column-gap: 7rem;
+    }
+
+    .home__car-icon{
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    .about__container{
+        column-gap: 6rem;
+        align-items: center;
+    }
+
+    .about__group,
+    .about__img{
+        width: 380px;
+    }
+
+    .about__description{
+        padding-right: 4rem;
+        margin-bottom: 3rem;
+    }
+
+    .popular__container{
+        width: 855px;
+        padding-top: 3rem;
+    }
+
+    .popular__card{
+        width: 258px;
+        border-radius: 1.25rem;
+        margin-bottom: 5rem;
+    }
+
+    .popular__img{
+        width: 180px;
+        margin: .75rem 0 1.25rem 2rem;
+    }
+
+    .featured__container{
+        padding: 2rem 0 3rem;
+    }
+
+    .featured__map{
+        left: 358px;
+        top: 207px;
+    }
+
+    .featured__map-4{
+        left: 368px;
+    }
+
+    .featured__map-5{
+        left: 372px;
+    }
+
+    .logos__container{
+        grid-template-columns: repeat(6, max-content);
+    }
+    .logos__img{
+        width: 50px;
+    }
+
+    .footer__container{
+        grid-template-columns: repeat(4, max-content);
+        justify-content: space-between;
+    }
+
+    .footer__logo i{
+        font-size: 2rem;
+    }
+
+    .footer__title{
+        margin-bottom: 1rem;
+    }
+
+    .footer__copy{
+        margin-top: 8rem;
+        padding-bottom: 1rem;
+    }
+
+    .scrollup{
+        right: 3rem;
+    }
+}
+
+#particles-js{
+    height: 100%;
+    
+}

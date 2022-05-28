@@ -1,6 +1,6 @@
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
-      navToogle = document.getElementById('nav-toggle'),
+      navToogle = document.getElementByIda('nav-toggle'),
       navClose = document.getElementById('nav-close')
 
 /* ====== MENU SHOW ======*/
@@ -87,3 +87,20 @@ function scrollActive(){
 window.addEventListener('scroll', scrollActive)
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+    //reset: true
+})
+
+sr.reveal(`.home__title, .popular__container, .featured__img, featured__img-2, featured__img-3, featured__img-4, featured__img-5, featured__img-6`)
+sr.reveal(`.home__subtitle`, {delay: 500})
+sr.reveal(`.home__elec`, {delay: 600})
+sr.reveal(`.home__img`, {delay: 800})
+sr.reveal(`.home__car-data`, {delay: 900, interval: 100, origin: 'bottom'})
+sr.reveal(`.home__button`, {delay: 1000, origin: 'bottom'})
+sr.reveal(`.about__group`, {origin: 'left'})
+sr.reveal(`.about__data`, {origin: 'right'})
+sr.reveal(`.featured__card, .logos__content, footer__content`, {interval: 300})
