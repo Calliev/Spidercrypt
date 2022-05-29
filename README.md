@@ -1,6 +1,5 @@
 # 🕷️ Spidercrypt
-Spidercrypt é o site que desenvolvido por um grupo de alunos, onde falamos um pouco 
-mais sobre o amigão da vizinhança e os principais vilões que vem enfrentando.
+Spidercrypt é o site que desenvolvido por um grupo de alunos.
   Este site contém informações sobre os vilões e o homem-aranha com botões funcionais e bem estilizados.
   Disponivel em: https://spidercrypts.web.app
 
