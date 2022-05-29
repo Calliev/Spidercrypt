@@ -1,4 +1,4 @@
-# Spidercrypt
+#🕷️ Spidercrypt
 Spidercrypt é o site que desenvolvido por um grupo de alunos, onde falamos um pouco 
 mais sobre o amigão da vizinhança e os principais vilões que vem enfrentando.
   Este site contém informações sobre os vilões e o homem-aranha com botões funcionais e bem estilizados.
