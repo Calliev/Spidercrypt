@@ -1,6 +1,6 @@
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
-      navToogle = document.getElementByIda('nav-toggle'),
+      navToogle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close')
 
 /* ====== MENU SHOW ======*/
